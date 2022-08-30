@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="swipe-master">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/js/swipe-master.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

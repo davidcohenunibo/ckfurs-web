@@ -12,21 +12,22 @@
 </head>
 
 <body>
-	<div class="wrapper d-flex">
+	<!-- Site Wrapper  -->
+	<div class="wrapper">
 		<!-- Page Sidebar  -->
 		<aside>
-			<nav id="sidebar" class="flex-column active">
+			<nav id="sidebar" class="d-flex active">
 				<div class="toggle-menu">
 					<button type="button" id="sidebarCollapse" class="btn btn-primary">
 						<span class="fa fa-bars"></span>
 						<span class="sr-only">Toggle Menu</span>
 					</button>
 				</div>
-	
+
 				<div class="container-fluid sidebar-inner">
 					<div class="sidebar-header">
 						<div class="logo">
-							<a href="index.html"><img src="images/logo.svg" alt="Logo" />
+							<a href="index.html"><img src="images/logo.svg" alt="Logo" /></a>
 						</div>
 					</div>
 					<div class="sidebar-body mb-2">
@@ -37,17 +38,31 @@
 							<li>
 								<a href="#"><span class="fa fa-user mx-3" aria-hidden="true"></span> ABOUT</a>
 							</li>
+
 							<li>
 								<a href="#"><span class="fa fa-sticky-note mx-3" aria-hidden="true"></span> BLOG</a>
 							</li>
-	
+
 							<li>
 								<a href="#"><span class="fa fa-suitcase mx-3" aria-hidden="true"></span> Gallery</a>
 								</li>
-								<li class="m-5">
-									<a href="#"><span class="fa fa-language mx-3" aria-hidden="true"></span>Language: English</a>
-								</li>
 						</ul>
+
+						<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" >
+							<span class="badge bg-dark">Language: ENGLISH</span>
+						</a>
+						<ul class="collapse list-unstyled " id="pageSubmenu">
+							<li class="p-1">
+								<a href="#" class="h6 p-0">English</a>
+							</li>
+							<li class="p-1">
+								<a href="#" class="p-0">Greek</a>
+							</li>
+							<li class="p-1">
+								<a href="#" class="p-0">Russian</a>
+							</li>
+						</ul>
+
 					</div>
 					<div class="sidebar-footer">
 						<p class="h6 pb-1">Subscribe for newsletter</p>
@@ -58,14 +73,14 @@
 							</div>
 						</form>
 					</div>
-	
+
 					<div class="footer d-flex">
 						<p class="">
 							Copyright &copy;
 							<script>document.write(new Date().getFullYear());</script> All rights reserved
 						</p>
 					</div>
-	
+
 				</div>
 			</nav>
 		</aside>
@@ -73,7 +88,7 @@
 
 		<!-- Page Content  -->
 		<main id="content">
-			<div class="container-fluid p-0">
+			<div class="container-fluid p-0" >
 				<div id="carouselExampleIndicators" class="carousel-fade slide" data-ride="carousel" data-pause="false">
 					<div class="carousel-inner">
 						<div class="carousel-item active">
@@ -107,7 +122,7 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
-			
+
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
 			</div>
 		</main>
@@ -116,8 +131,7 @@
 
 	<!-- SCRIPTS -->
 	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/main.js"></script>
 
 </body>

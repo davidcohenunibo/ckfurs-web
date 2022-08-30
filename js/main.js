@@ -14,9 +14,10 @@
 
 	$('#sidebarCollapse').on('click', function () {
       $('#sidebar').toggleClass('active');
-	  setTimeout(function() {
-		$('.toggle-button').fadeOut('fast');
-	}, 100); // <-- time in milliseconds
   });
+
+  $('#sidebar li a').on('click', function () {
+	$('#sidebar').toggleClass('active');
+});
 
 })(jQuery);

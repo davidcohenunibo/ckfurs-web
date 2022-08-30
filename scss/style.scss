@@ -38,6 +38,11 @@ body {
 
 
 #sidebar {
+
+
+	position: fixed;
+	bottom: 0;
+	flex-direction: column;
 	min-width: $sidebarDimension;
 	max-width: $sidebarDimension ;
 	height: 100%;
@@ -50,7 +55,7 @@ body {
 	&.active {
 		margin-left: -$sidebarDimension;
 		transition: margin-left .5s;
-		
+
 		.toggle-menu {
 				margin-right: -75px;
 				transition: margin-right .5s;
@@ -230,7 +235,9 @@ body {
 		}
 	}
 	.sidebar-header {
-		flex: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		padding: 1rem 1rem;
 	}
 
