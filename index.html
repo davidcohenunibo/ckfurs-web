@@ -13,6 +13,7 @@
 
 <body>
 	<!-- Site Wrapper  -->
+
 	<div class="wrapper">
 		<!-- Page Sidebar  -->
 		<aside>
@@ -23,7 +24,6 @@
 						<span class="sr-only">Toggle Menu</span>
 					</button>
 				</div>
-
 				<div class="container-fluid sidebar-inner">
 					<div class="sidebar-header">
 						<div class="logo">
@@ -33,36 +33,20 @@
 					<div class="sidebar-body mb-2">
 						<ul class="list-unstyled components mb-3">
 							<li class="active">
-								<a href="#"><span class="fa fa-home mx-3 " aria-hidden="true"></span> HOME</a>
+								<a href="#first-section"><span class="fa fa-home mx-3 " aria-hidden="true"></span> HOME</a>
 							</li>
 							<li>
-								<a href="#"><span class="fa fa-user mx-3" aria-hidden="true"></span> ABOUT</a>
-							</li>
-
-							<li>
-								<a href="#"><span class="fa fa-sticky-note mx-3" aria-hidden="true"></span> BLOG</a>
+								<a href="#second-section"><span class="fa fa-user mx-3" aria-hidden="true"></span> SECOND SECTION</a>
 							</li>
 
 							<li>
-								<a href="#"><span class="fa fa-suitcase mx-3" aria-hidden="true"></span> Gallery</a>
+								<a href="#third-section"><span class="fa fa-sticky-note mx-3" aria-hidden="true"></span> THIRD SECTION</a>
+							</li>
+
+							<li>
+								<a href="#about-section"><span class="fa fa-suitcase mx-3" aria-hidden="true"></span> ABOUT</a>
 								</li>
 						</ul>
-
-						<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" >
-							<span class="badge bg-dark">Language: ENGLISH</span>
-						</a>
-						<ul class="collapse list-unstyled " id="pageSubmenu">
-							<li class="p-1">
-								<a href="#" class="h6 p-0">English</a>
-							</li>
-							<li class="p-1">
-								<a href="#" class="p-0">Greek</a>
-							</li>
-							<li class="p-1">
-								<a href="#" class="p-0">Russian</a>
-							</li>
-						</ul>
-
 					</div>
 					<div class="sidebar-footer">
 						<p class="h6 pb-1">Subscribe for newsletter</p>
@@ -73,14 +57,10 @@
 							</div>
 						</form>
 					</div>
-
 					<div class="footer d-flex">
-						<p class="">
-							Copyright &copy;
-							<script>document.write(new Date().getFullYear());</script> All rights reserved
+						<p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
 						</p>
 					</div>
-
 				</div>
 			</nav>
 		</aside>
@@ -88,43 +68,75 @@
 
 		<!-- Page Content  -->
 		<main id="content">
-			<div class="container-fluid p-0" >
-				<div id="carouselExampleIndicators" class="carousel-fade slide" data-ride="carousel" data-pause="false">
-					<div class="carousel-inner">
-						<div class="carousel-item active">
-							<img class="d-flex img-slider" src="images/slider1.jpg" alt="First slide">
-						</div>
-						<div class="carousel-item">
-							<img class="d-flex img-slider" src="images/slider2.jpg" alt="Second slide">
+			<div class="container-fluid"  data-bs-spy="scroll"  data-bs-target="#sidebar-body" tabindex="0">
+				<section id="first-section" class="row p-2">
+					<div class="col-12 p-0">
+						<div id="carouselExampleIndicators" class="carousel-fade slide" data-ride="carousel" data-pause="false">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img class="d-flex img-slider" src="images/slider1.jpg" alt="First slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-flex img-slider" src="images/slider2.jpg" alt="Second slide">
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
-			</div>
+				</section>
+				<section id="second-section" class="row py-5">
+					<div class="col-12">
+						<h2>Title of Second Section</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt maxime sed dignissimos, reprehenderit dolores quos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
+					</div>
+				</section>
+				<section id="third-section" class="row py-5">
+					<h2>Title of Third Section</h2>
+					<p>a fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
+					<p>Lorem ipsum dolor sit amet, caquos ab deserunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adigent nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
+					<p>Lorem ipsum dolor gs quogtetur adipisicing elit. Facilis nesciunt gunt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
+					<p>Lorem ipsum dolor sit amacaecati. Minus voluptates unde incidunt veritatis debitis.</p>
+					<p>Lorem ipsum dolor sit amet, consecgnt necessitatibus fugiat provident nisi in obcaecati. Minus voluptates unde incidunt veritatis debitis.</p>
+				</section>
+				<section id="about-section" class="row py-5">
+					<h2>About</h2>
+					<div class="col-8">
+						<p>Isaac Cohen company founded in 2002, In the city of Kastoria. With excellent expertise and european focus, active since then in the fur industry.
+
+							The years of Ottoman acquisition, counting five centuries dynamic presence, becoming a turbocharger of the local economy and a catalyst for economic and cultural development.
+
+							The company has organized staffing, and workforce, fully specialized in the production of fur products.
+
+							The main goal of business: Production and trade of fur products, high – standards that will meet the greek and international standards.
+
+							For this purpose the company:
+
+							* Developed a fully equipped laboratory for raw materials and products.
+							* It also developed, full featured processing workshop and production of fur products.
+
+							Company’s target, is to:
+
+							* Do continuous research to improve the products and first of matter, which always meet the conditions and market demand.
+							*Obtains raw materials from reliable suppliers.
+							* Established procedures for the best possible service to its customers and their well-informed about its products.
+							* Respect the environment by applying environmentally sound production methods.
+
+							As a result of the organization and efficiency of the enterprise, and giving based on the originality, offers to its customers the most modern and quality products, such as boots, carpets, coats, scraps of fur etc.</p>
+					</div>
+					<div class="col-4">
+						<p>The art of fur is inextricably linked to the region of Kastoria</p>
+					</div>
+				</section>
+		</div>
 		</main>
 		<!-- End Page Content  -->
 	</div>

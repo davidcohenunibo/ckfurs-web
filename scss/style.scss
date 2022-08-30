@@ -16,18 +16,17 @@ $ColorSecondaryLight: #484848;
 $ColorSecondaryLight: #e9c2c2;
 $ColorPrimaryText: #000000;
 $ColorSecondaryText: #ffffff;
+$transitionFast: .5s;
 
 //Others
 $sidebarDimension: 100%;
 
-/* PlaceOlders */
+/* Placeholders */
 %clearOrnaments {
 	text-decoration: none !important;
 	outline: none !important;
 	box-shadow: none;
 }
-
-
 
 body {
 	font-family: $fontFamily;
@@ -35,11 +34,8 @@ body {
 	line-height: 1.8;
 }
 
-
-
+/*Sidebar Setting*/
 #sidebar {
-
-
 	position: fixed;
 	bottom: 0;
 	flex-direction: column;
@@ -47,35 +43,19 @@ body {
 	max-width: $sidebarDimension ;
 	height: 100%;
 	background: $ColorPrimary;
-	position: fixed;
 	color: $ColorPrimaryText;
 	z-index: 2;
-	transition: margin-left .5s;
+	transition: margin-left $transitionFast;
 
+	/* Active Sidebar affect sidebar and toggle-menu */
 	&.active {
 		margin-left: -$sidebarDimension;
-		transition: margin-left .5s;
+		transition: margin-left $transitionFast;
 
 		.toggle-menu {
 				margin-right: -75px;
-				transition: margin-right .5s;
+				transition: margin-right $transitionFast;
 			}
-	}
-
-	h1 {
-		margin-bottom: 20px;
-		font-weight: 700;
-		font-size: $fontSizeBig;
-
-		.logo {
-			color: $ColorPrimaryText;
-
-			span {
-				font-size: $fontSizeSmall;
-				color: $ColorSecondary;
-				display: block;
-			}
-		}
 	}
 
 	a {
@@ -91,7 +71,6 @@ body {
 
 				li {
 					font-size: $fontSizeSmall;
-
 				}
 			}
 
@@ -111,24 +90,24 @@ body {
 				}
 			}
 
-			&.active {
-				>a {
-					background: transparent;
+			& {
+				>a.active {
 					color: $ColorPrimaryText;
+					background-color: $ColorPrimaryDark;
+					transition: all 1s;
 				}
 			}
 		}
 	}
 
-
-
+	/*Toggle menu setting (avoid to change it)*/
 	.toggle-menu {
 		display: inline-block;
 		position: absolute;
 		top: 20px;
 		right: 10%;
 		z-index: 2;
-		transition: all .5s;
+		transition: all $transitionFast;
 		.btn {
 			width: 85px;
 			height: 85px;
@@ -158,8 +137,8 @@ body {
 					border-radius: 10px;
 				}
 
-				&:hover,
-				&:focus {
+				&:hover, &:focus {
+					@extend %clearOrnaments;
 					background: transparent !important;
 					border-color: transparent !important;
 				}
@@ -167,25 +146,11 @@ body {
 		}
 	}
 
-
-	.logo {
-		display: flex;
-		justify-content: center;
-
+	.sidebar-header .logo {
 		img {
-			width: 15vh;
+			width: 16vh;
 			aspect-ratio: 1/1;
 		}
-	}
-
-
-	a:hover,
-	button:focus {
-		@extend %clearOrnaments;
-	}
-
-	s .logo {
-		text-align: center;
 	}
 
 	.form-control {
@@ -211,12 +176,21 @@ body {
 		position: relative;
 	}
 
-	.dropdown-toggle::after {
-		display: block;
-		position: absolute;
-		top: 50%;
-		right: 0;
-		transform: translateY(-50%);
+	.sidebar-inner {
+		flex: auto;
+		padding: 1rem 1rem;
+	}
+
+	.sidebar-header {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 1rem 1rem;
+	}
+
+	.sidebar-body {
+		flex: auto;
+		padding: .5rem .5rem;
 	}
 
 	.sidebar-footer {
@@ -234,27 +208,6 @@ body {
 			font-size: 9px;
 		}
 	}
-	.sidebar-header {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding: 1rem 1rem;
-	}
-
-	.sidebar-body {
-		flex: auto;
-		padding: .5rem .5rem;
-	}
-
-	.sidebar-footer {
-		flex: auto;
-	}
-
-	.sidebar-inner {
-		flex: auto;
-		padding: 1rem 1rem;
-	}
-
 	.form-floating label {
 		font-size: .8rem;
 	}
@@ -281,6 +234,7 @@ body {
 		}
 	}
 
+	/*Sidebar MediaQuery*/
 	@include media-breakpoint-up(md) {
 		min-width: 270px !important;
 		max-width: 270px !important;
@@ -336,6 +290,24 @@ body {
 	}
 }
 
+#first-section {
+	background-color: black;
+	color: $ColorSecondaryText;
+
+}
+
+#second-section {
+	background-color: white;
+}
+
+#third-section {
+	background-color: black;
+	color: $ColorSecondaryText;
+}
+
+#fourth-section {
+	background-color: white;
+}
 
 
 @keyframes zoooming {

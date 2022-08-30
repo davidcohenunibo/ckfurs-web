@@ -17,7 +17,10 @@
   });
 
   $('#sidebar li a').on('click', function () {
-	$('#sidebar').toggleClass('active');
+	$('#sidebar').addClass('active');
 });
+
+
+
 
 })(jQuery);
