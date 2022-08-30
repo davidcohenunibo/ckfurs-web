@@ -1,0 +1,16 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -watch scss -o css"
+  },
+  "author": "david",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "swipejs": "^2.3.1"
+  }
+}
