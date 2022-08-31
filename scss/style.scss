@@ -7,15 +7,15 @@ $fontSizeSmall: 14px;
 $fontSizeNormal: 16px;
 $fontSizeBig: 30px;
 
-//Colors
-$ColorPrimary: #fafafa;
-$ColorPrimaryLight: #ffffff;
-$ColorPrimaryDark: #c7c7c7;
-$ColorSecondary: #212121;
-$ColorSecondaryLight: #484848;
-$ColorSecondaryLight: #e9c2c2;
-$ColorPrimaryText: #000000;
-$ColorSecondaryText: #ffffff;
+//Colors Theme
+$ColorPrimary: #212121;
+$ColorPrimaryLight: #484848;
+$ColorPrimaryDark: #000000;
+$ColorSecondary:#f5f5f5;
+$ColorSecondaryLight: #ffffff;
+$ColorSecondaryDark: #c2c2c2;
+$ColorPrimaryText: #f5f5f5;
+$ColorSecondaryText: #424242;
 $transitionFast: .5s;
 
 //Others
@@ -36,14 +36,14 @@ body {
 
 /*Sidebar Setting*/
 #sidebar {
+	background-color: $ColorSecondary;
 	position: fixed;
 	bottom: 0;
 	flex-direction: column;
 	min-width: $sidebarDimension;
 	max-width: $sidebarDimension ;
 	height: 100%;
-	background: $ColorPrimary;
-	color: $ColorPrimaryText;
+	color: $ColorSecondaryText;
 	z-index: 2;
 	transition: margin-left $transitionFast;
 
@@ -77,24 +77,29 @@ body {
 			a {
 				padding: 10px 0;
 				display: block;
-				color: rgba(0, 0, 0, .6);
+				color: $ColorSecondaryText;
 				border-bottom: 1px solid rgba(0, 0, 0, .1);
 				@extend %clearOrnaments;
 
 				span {
-					color: $ColorSecondary;
+					color: $ColorSecondaryText;
 				}
 
 				&:hover {
-					color: $ColorPrimaryText;
+					color: $ColorSecondaryText;
+
 				}
 			}
 
 			& {
 				>a.active {
-					color: $ColorPrimaryText;
-					background-color: $ColorPrimaryDark;
+					color: $ColorSecondaryText;
+
+					background-color: $ColorSecondaryLight;
 					transition: all 1s;
+					span {
+						color: $ColorSecondaryDark;
+					}
 				}
 			}
 		}
@@ -117,7 +122,7 @@ body {
 			span {
 				margin-right: -40px;
 				font-size: 16px;
-				color: $ColorPrimaryText;
+				color: $ColorSecondaryText;
 			}
 
 			&.btn-primary {
@@ -133,7 +138,7 @@ body {
 					bottom: 0;
 					content: '';
 					transform: rotate(45deg);
-					background: $ColorPrimary;
+					background: $ColorSecondary;
 					border-radius: 10px;
 				}
 
@@ -154,7 +159,7 @@ body {
 	}
 
 	.form-control {
-		color: $ColorPrimaryText;
+		color: $ColorSecondaryText;
 		font-size: .9rem;
 
 		&:focus,
@@ -170,6 +175,13 @@ body {
 			color: rgba(0, 0, 0, .5);
 		}
 
+
+	}
+
+	.form-floatin{
+		label {
+			font-size: .8rem;
+		}
 	}
 
 	a[data-toggle="collapse"] {
@@ -195,7 +207,7 @@ body {
 
 	.sidebar-footer {
 		p {
-			color: $ColorPrimaryText;
+			color: $ColorSecondaryText;
 		}
 	}
 
@@ -223,7 +235,7 @@ body {
 		}
 
 		.form-floating label {
-			font-size: 1rem;
+			font-size: .9rem;
 		}
 
 		a {
@@ -272,8 +284,8 @@ body {
 }
 
 #content {
+	background-color: $ColorSecondaryDark;
 	width: 100%;
-	padding: 0;
 	min-height: 100vh;
 
 	.img-slider {
@@ -291,22 +303,24 @@ body {
 }
 
 #first-section {
-	background-color: black;
-	color: $ColorSecondaryText;
-
-}
-
-#second-section {
-	background-color: white;
+	background-color: $ColorPrimary;
+	color: $ColorPrimaryText;
 }
 
 #third-section {
-	background-color: black;
+	background-color: $ColorPrimary;
+	color: $ColorPrimaryText;
+}
+
+#second-section {
+	background-color: $ColorSecondary;
 	color: $ColorSecondaryText;
 }
 
-#fourth-section {
-	background-color: white;
+
+#about-section {
+	background-color: $ColorSecondary;
+	color: $ColorSecondaryText;
 }
 
 
@@ -318,4 +332,58 @@ body {
 	100% {
 		transform: scale(1.1);
 	}
+}
+
+.custom-shape-divider-bottom-1661957639 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.custom-shape-divider-bottom-1661957639 svg {
+	position: relative;
+	display: block;
+	width: calc(117% + 1.3px);
+	height: 25vh;
+}
+
+.custom-shape-divider-bottom-1661957639 .shape-fill {
+	fill: #000000;
+}
+
+.custom-shape-divider-top-1661958724 {
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1661958724 svg {
+	position: relative;
+	display: block;
+	width: calc(160% + 1.3px);
+	height: 186px;
+}
+
+.custom-shape-divider-top-1661958724 .shape-fill {
+	fill: #000000;
+}
+
+.custom-shape-divider-bottom svg {
+	position: relative;
+	display: block;
+	width: calc(117% + 1.3px);
+	height: 25vh;
+}
+
+.custom-shape-divider-bottom .shape-fill {
+	fill: #000000;
 }
