@@ -10,6 +10,7 @@
   "author": "david",
   "license": "ISC",
   "dependencies": {
+    "gsap": "^3.11.0",
     "node-sass": "^7.0.1",
     "swipejs": "^2.3.1"
   }

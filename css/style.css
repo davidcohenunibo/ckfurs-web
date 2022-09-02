@@ -8378,7 +8378,8 @@ textarea.form-control-lg {
 body {
   font-family: "Poppins", Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.8; }
+  line-height: 1.8;
+  transition: background 2s; }
 
 /*Sidebar Setting*/
 #sidebar {
@@ -8533,7 +8534,6 @@ body {
         margin-right: -70px; } }
 
 #content {
-  background-color: #c2c2c2;
   width: 100%;
   min-height: 100vh; }
   #content .img-slider {
@@ -8545,19 +8545,15 @@ body {
     animation: zoooming ease 10s; }
 
 #first-section {
-  background-color: #212121;
   color: #f5f5f5; }
 
 #third-section {
-  background-color: #212121;
   color: #f5f5f5; }
 
 #second-section {
-  background-color: #f5f5f5;
   color: #424242; }
 
 #about-section {
-  background-color: #f5f5f5;
   color: #424242; }
 
 @keyframes zoooming {
@@ -8611,3 +8607,8 @@ body {
 
 .custom-shape-divider-bottom .shape-fill {
   fill: #000000; }
+
+.demo-text .text {
+  font-size: clamp(3rem, 3vw, 3rem);
+  line-height: 1;
+  font-weight: 900; }
